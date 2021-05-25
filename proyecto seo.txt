@@ -1,0 +1,9 @@
+aplique diferentes titulos a cada pagina,
+cada pagina tiene una meta-descripcion unica que tiene que ver con su contenido
+todas las paginas tienen un h1 unico,
+use los keywords correspondientes con palabras clave para cada pagina,
+acorte las rutas relativas y varios href,
+utilice todos los alt para cada imagen y descripcion,
+enlace un boton en la nav que dirije siemre al home,
+tambien hice uso de la etiqueta auhtor
+(ajuste toda la pagina en general ya que nunca lo habia echo).
