@@ -10,12 +10,10 @@
 .body {
   
   background-image: url(../img/background_img2.jpg);
-  background-image: linear-gradient(to left, black,#6204DB );
-  
-  display: block;
+  background-color: black;
+   display: block;
   background-position: center;
   background-repeat: no-repeat;
- 
   
   
 }
@@ -80,15 +78,9 @@
 
 /*H2*/
 .h2 {
-  background: #4c03aa;
-  color: white;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 100px;
-  border-radius: 5px;
+  background-color: transparent;
+color: azure;
+
 }
 
 .parrafo {
@@ -274,15 +266,31 @@ display: inline;
 .card_inicio{
   background-image: url(/img/card.jpg);
   background-position:center;
+  background-repeat: no-repeat;
   
   border-radius: 40px;
   box-shadow: 0 15px 25px 10px rgb(0, 0, 0);
   
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 3000%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 
   
 
   /*ESTILO DE PARRAFO NUMERO 2*/
-  }
+  
   .parrafo2{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-style: oblique;
@@ -291,43 +299,25 @@ display: inline;
   }
 
   .video__galeria{
-   
     text-align: center;
   }
 
 
-/*GALERIA CARROUSEL DEL HOME*/
+.registro_texto{
+  color: azure;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
 
+@keyframes slidein {
+  from {
+    margin-top: 500px;
+   
+    width: 300%
+  }
 
-  @-webkit-keyframes spinner {
-    from {
-      -webkit-transform: rotateY(0deg);
-    }
-    to {
-      -webkit-transform: rotateY(-360deg);
-    }
+  to {
+    margin-left: 0%;
+    width: 100%;
   }
-  
-  #stage {
-    margin: 1em auto;
-    -webkit-perspective: 2000px;
-  }
-  
-  #spinner {
-    -webkit-animation-name: spinner;
-    
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 6s;
-    -webkit-transform-style: preserve-3d;
-    
-  }
-  #spinner:hover {
-    -webkit-animation-play-state: paused;
-  }
-  
-  #spinner img {
-    position: absolute;
-    border: 3px solid #ccc;
-    background: rgba(255,255,255,0.8);
-    box-shadow: inset 0 0 2opx rgba(0,0,0,0.2);
-  }
+}
