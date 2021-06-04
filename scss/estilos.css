@@ -264,7 +264,7 @@ display: inline;
 
   /*CARD DEL INICIO/HOME*/
 .card_inicio{
-  background-image: url(/img/card.jpg);
+  background-image: url(/img/card.jpg.jpg);
   background-position:center;
   background-repeat: no-repeat;
   
@@ -300,6 +300,7 @@ display: inline;
 
   .video__galeria{
     text-align: center;
+
   }
 
 
@@ -320,4 +321,12 @@ display: inline;
     margin-left: 0%;
     width: 100%;
   }
+}
+
+.boton_enviar{
+  background-color: rgb(241, 0, 0);
+  margin-left: 40%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
+ 
 }
