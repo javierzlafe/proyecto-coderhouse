@@ -51,6 +51,7 @@
   transition: 1s;
 }
 
+
 .cabecera {
   display: flex;
   width: 200px;
@@ -72,8 +73,12 @@
   -webkit-transform: rotatey(360deg);
           transform: rotatey(360deg) ;
           
-          
-          
+}
+
+#logo_galeria{
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 5% ;
 }
 
 /*H2*/
@@ -329,4 +334,8 @@ display: inline;
   font-family: Arial, Helvetica, sans-serif;
   font-style: oblique;
  
+}
+
+.body_historia{
+  background-color: black;
 }
