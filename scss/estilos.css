@@ -51,6 +51,7 @@
   transition: 1s;
 }
 
+
 .cabecera {
   display: flex;
   width: 200px;
@@ -72,8 +73,12 @@
   -webkit-transform: rotatey(360deg);
           transform: rotatey(360deg) ;
           
-          
-          
+}
+
+#logo_galeria{
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 5% ;
 }
 
 /*H2*/
@@ -300,6 +305,7 @@ display: inline;
 
   .video__galeria{
     text-align: center;
+
   }
 
 
@@ -320,4 +326,16 @@ display: inline;
     margin-left: 0%;
     width: 100%;
   }
+}
+
+.boton_enviar{
+  background-color: rgb(241, 0, 0);
+  margin-left: 40%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
+ 
+}
+
+.body_historia{
+  background-color: black;
 }
