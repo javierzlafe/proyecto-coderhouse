@@ -1,0 +1,151 @@
+$fondo:rgb(0, 0, 0);
+$color-principal:rgb(76, 3, 170);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    
+}
+.body{
+    background-color: $fondo;
+}
+        /*BARRA NAVEGADORA*/
+.nav-bar{
+    background: $color-principal;
+    text-align: center;
+    display: flex
+    
+}
+@media screen and (max-width: 600px) {
+    .nav-bar {
+        background-color: $fondo;
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+        
+}
+    .nav__button{
+        background-color: $color-principal;
+        color: white;
+        
+    
+    }}
+
+.nav__button{
+    border-radius: 5px;
+    padding: 5px;
+    margin-inline: 50px;
+}
+.nav__button:hover{
+    background: black;
+    color: white;
+    transition: 1s;
+    transform: scale(1.3, 1.3) ;
+}
+.cabecera{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    
+    transition: all .3s ease-in-out;
+    
+    
+}
+
+.cabecera:hover{
+    transform: rotatey(360deg);
+    
+}
+
+/*H2*/
+
+.h2{
+    background: $color-principal;
+    color: white;
+    display: grid;
+    justify-content: center;
+    margin: 100px;
+    border-radius: 5px;
+    
+}
+
+.parrafo{
+    text-align: center;
+    color: white;
+    font-size: large;
+}
+.form{
+    color: white;
+}
+
+#BCarg{
+    text-align: center;
+}
+
+            /*FO*/
+.footer{
+    display: flex;
+    flex-direction: row;
+    background: black;
+    border: 2px solid blue;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.footer div{
+    margin: 10px;
+    text-align: center;
+    padding: 5px;
+}
+            /*IMAGENES DE GALERIA*/
+
+#javi{
+    transition-delay: 0.5s;
+}
+#sid{
+    transition-delay: 0.5s;
+}
+#cris{
+    transition-delay: 0.5s;
+}
+#raul{
+    transition-delay: 0.5s;
+}
+#hermes{
+    transition-delay: 0.5s;
+}
+
+.contacto{
+    text-align: center;
+    margin: 10px;
+    
+}
+
+.formulario{
+    text-align: center;
+}
+
+.historia{
+    background: $fondo;
+    opacity: 70%;
+    text-align: center;
+    padding: 15px;
+    margin: 25px;
+    font-style: inherit;
+}
+
+.item img{
+    align-items: center;
+}
+
+.card {
+align-items: center;
+}
+
