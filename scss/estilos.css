@@ -23,6 +23,17 @@
   text-align: center;
 
 }
+.img_boton{
+  height: 50px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  border-radius: 20px; 
+}
+
+.img_boton:hover{
+  -webkit-transform: rotatey(360deg);
+          transform: rotatey(360deg) ;
+}
 
 
 @media screen and (max-width: 600px) {
@@ -165,11 +176,7 @@ display: inline;
 }
 
 .historia_titulo{
-  color: transparent;
-  -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: #ffffff;
-  box-shadow: 0 15px 25px 10px rgb(0, 0, 0);
-  display: -ms-grid;
+ color: aliceblue;
   display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -180,17 +187,14 @@ display: inline;
   
 }
 .historia {
-  background-image: linear-gradient(to right, black,#6204DB );
+  background-color: rgb(0, 0, 0);
   border-radius: 40px;
-  box-shadow: 0 15px 25px 10px rgb(0, 0, 0);
-  
-  
-  
-  
+  box-shadow: 0 15px 25px 10px rgb(73, 66, 66);
   text-align: center;
   padding: 15px;
   margin: 25px;
   font-style: inherit;
+  margin:auto;
 }
 
 .item img {
