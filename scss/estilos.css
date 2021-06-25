@@ -62,6 +62,7 @@
   transition: 1s;
 }
 
+/*IMAGEN DE CABECERA*/
 
 .cabecera {
   display: flex;
@@ -118,15 +119,15 @@ color: azure;
   
 }
 
-/*FO*/
+/*FOOTER*/
 .footer a{
   text-decoration: none;
   list-style: none;
- font-family: monospace;
- font-style: oblique;
- margin-left: 15px;
-display: inline;
- align-items: center;
+  font-family: monospace;
+  font-style: oblique;
+  margin-left: 15px;
+  display: inline;
+  align-items: center;
   
 }
 
@@ -135,7 +136,20 @@ display: inline;
   text-align: center;
   font-size: 15px;
   font-family: cursive;
-    font-style:italic;
+  font-style:italic;
+}
+/*cambio de fondo botones*/
+.button__footer .fa-facebook:hover{
+  background-color: #3b5998;
+}
+.button__footer .fa-instagram:hover{
+  background-color: #ff0084;
+}
+.button__footer .fa-spotify:hover{
+  background-color: #01a74c;
+}
+.button__footer .fa-youtube:hover{
+  background-color: #bb0000;
 }
 
 
@@ -165,29 +179,32 @@ display: inline;
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s;
 }
-
+/*centrar contenido contactos*/
 .contacto {
   text-align: center;
   margin: 10px;
 }
-
+/*centrar contenido formularios*/
 .formulario {
   text-align: center;
 }
 
+
+/*HISTORIA*/
 .historia_titulo{
- color: aliceblue;
+  color: aliceblue;
   display: grid;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-          text-align: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
   margin: 70px;
   
   
 }
+/*fondo div historia*/
 .historia {
-  background-color: rgb(0, 0, 0);
+  background-color:  rgb(0, 0, 0);
   border-radius: 40px;
   box-shadow: 0 15px 25px 10px rgb(73, 66, 66);
   text-align: center;
@@ -199,8 +216,8 @@ display: inline;
 
 .item img {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #carrousel{
@@ -266,7 +283,7 @@ display: inline;
 
   @media screen and (max-width: 768px) {
 	.post-list {
-	  grid-gap: 3px;
+  grid-gap: 3px;
 	}
   }
 
@@ -321,8 +338,7 @@ display: inline;
 
 @keyframes slidein {
   from {
-    margin-top: 500px;
-   
+    margin-top: 500px; 
     width: 300%
   }
 
@@ -338,7 +354,6 @@ display: inline;
   margin-left: 40%;
   font-family: Arial, Helvetica, sans-serif;
   font-style: oblique;
- 
 }
 
 .body_historia{
@@ -360,7 +375,7 @@ display: inline;
 .social {
 	position: fixed; /* botones fijos en toda la pantalla*/
 	left: 0px; /* barra en la izquierda */
-	top: 400px; /* bajo la barra */
+	top: 200px; /* bajo la barra */
 	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
 }
 
@@ -371,20 +386,85 @@ display: inline;
 	.social ul li a {
 		display: inline-block;
 		color:#fff;
-		background: #000;
-		padding: 15px 2px;
+		padding: 15px 5px;
 		text-decoration: none;
 		-webkit-transition:all 500ms ease;
 		-o-transition:all 500ms ease;
 		transition:all 500ms ease; /* transicion */
 	}
-/*colores de cada red social*/
-	.social ul li .fa-facebook {background:transparent;} 
-	.social ul li .fa-spotify {background: transparent}
-	.social ul li .fa-youtube {background: transparent;}
-	.social ul li .fa-instagram {background: transparent}
 
-	.social ul li a:hover {
-		background: transparent; /* Cambio de fondo cuando paso el mouse*/
+  .social ul li a:hover {
 		padding: 35px 20px; /*mas grande el espacio cuando paso el mouse */
-	}
+	} 
+
+/*colores de cada red social*/
+	.social ul li .fa-facebook {background: transparent;} 
+  .social ul li .fa-facebook:hover {background: #3b5998;} 
+  .social ul li .fa-spotify {background: transparent}
+	.social ul li .fa-spotify:hover {background: #01a74c}
+	.social ul li .fa-youtube {background: transparent;}
+  .social ul li .fa-youtube:hover {background: #bb0000;}
+	.social ul li .fa-instagram {background: transparent}
+  .social ul li .fa-instagram:hover {background: #ff0084}
+
+
+
+  /*formulario de contacto*/
+
+  .form_contacto{
+    
+    width:340px;
+    height:440px;
+    background:#e6e6e6;
+    border-radius:8px;
+    box-shadow:0 0 40px 40px rgb(0, 0, 0);
+    margin:calc(50vh - 220px) auto;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+    position:relative
+
+    
+  }
+  
+
+input{
+  width:100%;
+  padding:10px;
+  background:none;
+  border:0;
+  font-family:'Montserrat',sans-serif;
+  border-bottom:2px solid #40409c;
+  
+}
+
+
+.button__send{
+  color: #000000;
+  padding: 5px;
+  background: rgb(245, 112, 112);
+  border-radius: 5px;
+  box-shadow: 0 0 10px 1px #000000;
+  font-family:cursive;
+}
+
+.button__send:hover{
+  background-color: rgb(0, 206, 137);
+  transition: 1s;
+  box-shadow:none;
+  padding: 15px;
+  font-family:cursive;
+}
+
+.cartoon{
+  position: relative;
+  height: 10vh;
+  border-radius: 50px;
+  margin-left: -500px;
+  margin-top:-400px;
+}
+
+.cont{
+  text-align: center;
+}
