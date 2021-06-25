@@ -11,7 +11,7 @@
   
   background-image: url(../img/background_img2.jpg);
   background-color: black;
-   display: block;
+  display: block;
   background-position: center;
   background-repeat: no-repeat;
   
@@ -366,7 +366,7 @@ color: azure;
 }
 
 .post :hover{
-  -webkit-transform:scale(1.25);
+  -webkit-transform:scale(1.1);
   align-content: center;
   
   
@@ -461,7 +461,7 @@ input{
   position: relative;
   height: 10vh;
   border-radius: 50px;
-  margin-left: -500px;
+  margin-left: -330px;
   margin-top:-400px;
 }
 
