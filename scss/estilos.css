@@ -204,7 +204,8 @@ color: azure;
 }
 /*fondo div historia*/
 .historia {
-  background-color:  rgb(0, 0, 0);
+  background:rgb(0, 0, 0);
+  opacity: 75%;
   border-radius: 40px;
   box-shadow: 0 15px 25px 10px rgb(73, 66, 66);
   text-align: center;
